@@ -1,8 +1,8 @@
 # Network and Cloud Infrastructure
 
-This repository contains practical IT infrastructure projects focused on networking, Windows Server, Microsoft 365, Azure, cloud infrastructure, and automation.
+A practical portfolio for small-company IT infrastructure work.
 
-The goal is to document real configuration, troubleshooting, verification, and explanation skills for IT support, infrastructure, network, and junior system administrator roles.
+This repository is used to document hands-on projects in networking, systems, Microsoft cloud services, Azure infrastructure, and automation. Each project is kept in its own folder with a short explanation and supporting documentation.
 
 ## Projects
 
@@ -10,19 +10,21 @@ The goal is to document real configuration, troubleshooting, verification, and e
 
 - [Project 04 - VLAN Trunk Between Two Switches](networking/project-04-vlan-trunk-between-switches/README.md)
 
-## Topics Covered
+## Focus Areas
 
-- VLANs
-- Access ports
-- Trunk ports
-- IP addressing
-- Network troubleshooting
-- Cisco Packet Tracer
+- Network fundamentals and troubleshooting
+- VLANs, trunks, routing, DHCP, and DNS
 - Windows Server and Active Directory
-- Microsoft 365 and Entra ID
+- Microsoft 365, Entra ID, and Intune
 - Azure infrastructure
 - PowerShell automation
 
-## Portfolio Goal
+## Repository Structure
 
-This portfolio is built step by step. Each project should include a clear goal, topology, configuration, verification, and documentation.
+```text
+networking/
+windows-server-active-directory/
+microsoft-365-entra-intune/
+azure-infrastructure/
+powershell-automation/
+```
