@@ -14,8 +14,6 @@ PC1 ---- SW0 ---- trunk ---- SW1 ---- PC3
 VLAN 20         Gi0/1       Gi0/1    VLAN 20
 ```
 
-![Topology](screenshots/topology.png)
-
 ## VLAN and IP Plan
 
 | Device | VLAN | IP Address | Subnet Mask | Default Gateway |
@@ -25,7 +23,7 @@ VLAN 20         Gi0/1       Gi0/1    VLAN 20
 | PC2 | 10 | 192.168.10.20 | 255.255.255.0 | 192.168.10.1 |
 | PC3 | 20 | 192.168.20.20 | 255.255.255.0 | 192.168.20.1 |
 
-> No router is used in this lab. The gateway addresses are included for the IP plan, but gateway tests are expected to fail until routing is added in a later project.
+No router is used in this lab. The gateway addresses are included for the IP plan, but gateway tests are expected to fail until routing is added in a later project.
 
 ## Switch Configuration Summary
 
@@ -46,31 +44,30 @@ show interfaces trunk
 ping
 ```
 
-### Trunk Verification
+Expected results:
 
-![Trunk verification on SW0](screenshots/sw0-show-interfaces-trunk.png)
+- VLAN 10 hosts on different switches can communicate.
+- VLAN 20 hosts on different switches can communicate.
+- VLAN 10 and VLAN 20 cannot communicate without a router or Layer 3 switch.
 
-![Trunk verification on SW1](screenshots/sw1-show-interfaces-trunk.png)
+## Screenshots
 
-### Ping Tests
+Screenshot evidence should be uploaded to this folder:
 
-Expected result: same VLAN across switches works.
+```text
+networking/project-04-vlan-trunk-between-switches/screenshots/
+```
 
-![VLAN 10 ping success](screenshots/vlan10-ping-success.png)
+Recommended screenshot names:
 
-![VLAN 20 ping success](screenshots/vlan20-ping-success.png)
-
-Expected result: different VLANs do not communicate without routing.
-
-![Cross-VLAN ping failed](screenshots/cross-vlan-ping-failed.png)
-
-## Result
-
-The lab worked as expected:
-
-- VLAN 10 worked across the trunk.
-- VLAN 20 worked across the trunk.
-- VLAN 10 and VLAN 20 stayed isolated because no router or Layer 3 switch was configured.
+```text
+topology.png
+sw0-show-interfaces-trunk.png
+sw1-show-interfaces-trunk.png
+vlan10-ping-success.png
+vlan20-ping-success.png
+cross-vlan-ping-failed.png
+```
 
 ## Documentation
 
@@ -79,6 +76,14 @@ Full documentation can be stored here:
 ```text
 docs/project-04-vlan-trunk-between-two-switches.pdf
 ```
+
+## Result
+
+The lab worked as expected:
+
+- VLAN 10 worked across the trunk.
+- VLAN 20 worked across the trunk.
+- VLAN 10 and VLAN 20 stayed isolated because no router or Layer 3 switch was configured.
 
 ## Key Concept
 
