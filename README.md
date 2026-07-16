@@ -2,13 +2,14 @@
 
 A practical portfolio for small-company IT infrastructure work.
 
-This repository is used to document hands-on projects in networking, systems, Microsoft cloud services, Azure infrastructure, and automation. Each project is kept in its own folder with a short explanation and supporting documentation.
+This repository documents hands-on projects in networking, systems, Microsoft cloud services, Azure infrastructure, and automation. Each project is kept in its own folder with a short README, documentation, and screenshots.
 
 ## Projects
 
 ### Networking
 
 - [Project 04 - VLAN Trunk Between Two Switches](networking/project-04-vlan-trunk-between-switches/README.md)
+- [Project 06 - Static Routing Between Two Routers](networking/project-06-static-routing-between-two-routers/README.md)
 
 ## Focus Areas
 
