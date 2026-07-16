@@ -2,7 +2,7 @@
 
 Basic VLAN trunking lab in Cisco Packet Tracer.
 
-The purpose of this project is to show how two switches can carry the same VLANs over one trunk link. Hosts in the same VLAN should communicate across switches. Hosts in different VLANs should stay separated until inter-VLAN routing is added.
+This project shows how two switches can carry the same VLANs over one trunk link. Hosts in the same VLAN can communicate across switches. Hosts in different VLANs stay separated because no router or Layer 3 switch is used in this lab.
 
 ## Topology
 
@@ -23,9 +23,9 @@ VLAN 20         Gi0/1       Gi0/1    VLAN 20
 | PC2 | 10 | 192.168.10.20 | 255.255.255.0 | 192.168.10.1 |
 | PC3 | 20 | 192.168.20.20 | 255.255.255.0 | 192.168.20.1 |
 
-No router is used in this lab. The gateway addresses are included for the IP plan, but gateway tests are expected to fail until routing is added in a later project.
+No router is used in this lab. The gateway addresses are included in the IP plan, but gateway tests are expected to fail until routing is added in a later project.
 
-## Switch Configuration Summary
+## Configuration Summary
 
 - VLAN 10: IT
 - VLAN 20: Sales
@@ -44,46 +44,22 @@ show interfaces trunk
 ping
 ```
 
-Expected results:
+Expected result:
 
 - VLAN 10 hosts on different switches can communicate.
 - VLAN 20 hosts on different switches can communicate.
-- VLAN 10 and VLAN 20 cannot communicate without a router or Layer 3 switch.
-
-## Screenshots
-
-Screenshot evidence should be uploaded to this folder:
-
-```text
-networking/project-04-vlan-trunk-between-switches/screenshots/
-```
-
-Recommended screenshot names:
-
-```text
-topology.png
-sw0-show-interfaces-trunk.png
-sw1-show-interfaces-trunk.png
-vlan10-ping-success.png
-vlan20-ping-success.png
-cross-vlan-ping-failed.png
-```
+- VLAN 10 and VLAN 20 cannot communicate without routing.
 
 ## Documentation
 
-Full documentation can be stored here:
-
 ```text
-docs/project-04-vlan-trunk-between-two-switches.pdf
+docs/Lab_04_VLAN_Trunk_Between_Two_Switches_CLEAN_No_BreakFix.pdf
+screenshots/
 ```
 
 ## Result
 
-The lab worked as expected:
-
-- VLAN 10 worked across the trunk.
-- VLAN 20 worked across the trunk.
-- VLAN 10 and VLAN 20 stayed isolated because no router or Layer 3 switch was configured.
+The lab worked as expected. Same-VLAN communication across switches was successful, and different VLANs stayed isolated because no router or Layer 3 switch was configured.
 
 ## Key Concept
 
