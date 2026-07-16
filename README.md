@@ -8,6 +8,7 @@ This repository documents hands-on projects in networking, systems, Microsoft cl
 
 ### Networking
 
+- [Project 03 - VLAN Access Ports](networking/project-03-vlan-access-ports/README.md)
 - [Project 04 - VLAN Trunk Between Two Switches](networking/project-04-vlan-trunk-between-switches/README.md)
 - [Project 06 - Static Routing Between Two Routers](networking/project-06-static-routing-between-two-routers/README.md)
 
